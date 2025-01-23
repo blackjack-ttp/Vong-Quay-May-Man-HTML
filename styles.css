@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #87ceeb, #f0e68c);
+    overflow: hidden;
+}
+
+.wheel-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #333;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: rotate(0deg);
+    transition: transform 5s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer; /* Hiệu ứng trỏ chuột */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%; /* Căn giữa theo chiều dọc */
+    right: -40px; /* Điều chỉnh khoảng cách sát vòng quay */
+    transform: translateY(-50%) rotate(-180deg); /* Xoay mũi tên vào trong */
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent; /* Tăng kích thước mũi tên */
+    border-bottom: 20px solid transparent; /* Tăng kích thước mũi tên */
+    border-left: 50px solid #ccc; /* Màu và chiều dài mũi tên */
+}
+
+
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+}
