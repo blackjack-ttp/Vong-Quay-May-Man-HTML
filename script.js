@@ -2,11 +2,11 @@
 const segments = [
   { name: "Hẹn bé lần sau!", probability: 20 },
   { name: "Nhân 2 số lượng kẹo", probability: 5 },
-  { name: "Hẹn bé lần sau!", probability: 20 },
+  { name: "Thêm 1 viên kẹo", probability: 20 },
   { name: "Chia 2 số lượng kẹo", probability: 5 },
   { name: "Hẹn bé lần sau!", probability: 20 },
   { name: "Thêm 4 viên kẹo", probability: 5 },
-  { name: "Hẹn bé lần sau!", probability: 20 },
+  { name: "Thêm 2 viên kẹo", probability: 20 },
   { name: "Trừ 3 viên kẹo", probability: 5 },
 ];
 
